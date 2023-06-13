@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-gray-300 text-white sticky top-0 z-10">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium text-gray-700">
+          <a href="#hero"
+            ><img class="w-2/6" src="img/reloadpng.png" alt=""
+          /></a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="text-3xl md:hidden cursor-pointer"
+          >
+            &#9776;
+          </button>
+          <nav
+            class="text-gray-700 hidden md:block space-x-8 text-sm"
+            aria-label="main"
+          >
+            <a href="#supplements" class="hover:opacity-70">Supplements</a>
+            <a href="#testimonials" class="hover:opacity-70">Testimonial</a>
+            <a href="#contact" class="hover:opacity-70">Contact us</a>
+          </nav>
+        </div>
+      </section>
+
+      <section
+        id="mobile-menu"
+        class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90">
+            Home</a
+          >
+          <a
+            href="#supplements"
+            class="w-full text-center py-6 hover:opacity-90"
+          >
+            Supplements</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:opacity-90"
+          >
+            Testimonials</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90">
+            Contact us</a
+          >
+        </nav>
+      </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="hero"
+        class="scroll-mt-40 flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white"
+          >
+            Complete nutrition for
+            <span class="text-indigo-700 dark:text-indigo-300">
+              all phases </span
+            >of life!
+          </h2>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            We believe in the power of good nutrition, and that is why we
+            created Reload!
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            Think Reload Vitamins...
+          </p>
+        </article>
+
+        <img
+          class="w-full sm:w-1/2 rounded-md animate-slide-in-bck-center origin-center"
+          src="./img/African family.jpg"
+          alt="family picture"
+        />
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <section
+        id="supplements"
+        class="scroll-mt-20 p-6 my-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Supplements
+        </h2>
+        <ul
+          class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl w-2/3 sm:w-5/6 dark:bg-black"
+          >
+            <img
+              class="mb-6 w-1/2"
+              src="./img/Reload men.jpg"
+              alt="reload men"
+            />
+            <h3 class="text-3xl text-center text slate-900 dark:text-white">
+              Reload men
+            </h3>
+            <p
+              class="mt-2 hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 sm:hidden text-2xl text-center text slate-500 dark:text-slate-400"
+            >
+              Reload men
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl w-2/3 sm:w-5/6 dark:bg-black"
+          >
+            <img
+              class="mb-6 w-1/2"
+              src="./img/Reload women.jpg"
+              alt="reload women"
+            />
+            <h3 class="text-3xl text-center text slate-900 dark:text-white">
+              Reload Women
+            </h3>
+            <p
+              class="mt-2 hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 sm:hidden text-2xl text-center text slate-500 dark:text-slate-400"
+            >
+              Reload Women
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl w-2/3 sm:w-5/6 dark:bg-black"
+          >
+            <img
+              class="mb-6 w-1/2"
+              src="./img/Reload kidz.jpg"
+              alt="reload kids"
+            />
+            <h3 class="text-3xl text-center text slate-900 dark:text-white">
+              Reload kids
+            </h3>
+            <p
+              class="mt-2 hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 sm:hidden text-2xl text-center text slate-500 dark:text-slate-400"
+            >
+              Reload kids
+            </p>
+          </li>
+        </ul>
+        <ul
+          class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl w-2/3 sm:w-5/6 dark:bg-black"
+          >
+            <img
+              class="mb-6 w-1/2"
+              src="./img/Reload men.jpg"
+              alt="reload men"
+            />
+            <h3 class="text-3xl text-center text slate-900 dark:text-white">
+              Reload men
+            </h3>
+            <p
+              class="mt-2 hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 sm:hidden text-2xl text-center text slate-500 dark:text-slate-400"
+            >
+              Reload men
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl w-2/3 sm:w-5/6 dark:bg-black"
+          >
+            <img
+              class="mb-6 w-1/2"
+              src="./img/Reload women.jpg"
+              alt="reload women"
+            />
+            <h3 class="text-3xl text-center text slate-900 dark:text-white">
+              Reload Women
+            </h3>
+            <p
+              class="mt-2 hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 sm:hidden text-2xl text-center text slate-500 dark:text-slate-400"
+            >
+              Reload Women
+            </p>
+          </li>
+          <li
+            class="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl w-2/3 sm:w-5/6 dark:bg-black"
+          >
+            <img
+              class="mb-6 w-1/2"
+              src="./img/Reload kidz.jpg"
+              alt="reload kids"
+            />
+            <h3 class="text-3xl text-center text slate-900 dark:text-white">
+              Reload kids
+            </h3>
+            <p
+              class="mt-2 hidden sm:block text-3xl text-center text-slate-500 dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 sm:hidden text-2xl text-center text slate-500 dark:text-slate-400"
+            >
+              Reload kids
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <section
+        id="testimonials"
+        class="p-6 my-12 widescreen:section-min-height tallscreen:section-min-height scroll-mt-20"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Testimonials
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia
+              laboriosam sit totam dolorem, ratione accusamus assumenda? Quasi
+              reiciendis molestiae non est itaque, tempore eius officia ut
+              facere aperiam amet!
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212;shsajak
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia
+              laboriosam sit totam dolorem, ratione accusamus assumenda? Quasi
+              reiciendis molestiae non est itaque, tempore eius officia ut
+              facere aperiam amet!
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212;shsajak
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia
+              laboriosam sit totam dolorem, ratione accusamus assumenda? Quasi
+              reiciendis molestiae non est itaque, tempore eius officia ut
+              facere aperiam amet!
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+          >
+            &#8212;shsajak
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <section
+        id="contact"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        >
+          Contact us
+        </h2>
+        <form class="gap-2 flex justify-center items-center">
+          <input
+            class="inline-block text-center sm:w-2/5 p-1 focus:outline-none border-solid border-2 focus:bg-white border-teal-600"
+            type="email"
+            placeholder="Please enter your email"
+            id="inputText"
+          />
+          <button
+            id="subscribeBtn"
+            class="bg-teal-600 hover:bg-teal-300 hover:text-black p-1 border-solid rounded mt-1 text-white hover:transform hover:duration-150"
+          >
+            Subscribe
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-gray-300">
+      <section class="flex flex-col sm:flex-row items-center justify-center">
+        <div class="w-3/6">
+          <a href="https://www.konga.com/search?search=reload%20vitamins">
+            <img src="img/Konga.png" alt=""
+          /></a>
+        </div>
+        <div class="w-4/12">
+          <a
+            href="https://www.jumia.com.ng/vitamins-dietary-supplements/reload/"
+          >
+            <img src="img/Jumia.png" alt=""
+          /></a>
+        </div>
+        <div class="w-2/5">
+          <a href="http://amazon.com"> <img src="img/amazon.png" alt="" /></a>
+        </div>
+        <div class="w-2/5">
+          <a href="http://shopify.com"><img src="img/shopify.png" alt="" /></a>
+        </div>
+      </section>
+
+      <section class="w-3/6 m-auto">
+        <p class="justify-evenly mb-4">
+          *These statements have not been evaluated by the Food and Drug
+          Administration. This product is not intended to prevent, diagnose,
+          treat or cure any disease.
+        </p>
+        <small
+          >&copy;
+          <span id="date"></span>
+          | All rights Reserved</small
+        >
+      </section>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
